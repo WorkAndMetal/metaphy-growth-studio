@@ -1,0 +1,21 @@
+@import "tailwindcss";
+:root { --background: #080b12; --foreground: #eaf1ff; }
+@theme inline { --color-background: var(--background); --color-foreground: var(--foreground); }
+body { margin: 0; background: var(--background); color: var(--foreground); font-family: Arial, Helvetica, sans-serif; }
+button { cursor: pointer; }
+button:focus-visible { outline: 2px solid #bfdbfe; outline-offset: 4px; }
+@custom-variant dark (&:where(.dark, .dark *));
+
+.agency-content { color: #eaf1ff; }
+.agency-intro { padding: 48px 0 90px; }
+.agency-eyebrow { margin-bottom: 28px; font-size: 10px; line-height: 1.8; letter-spacing: .2em; color: #93b4d7; }
+.agency-heading { font-size: clamp(36px, 4.8vw, 68px); line-height: 1.1; font-weight: 600; letter-spacing: -.045em; }
+.agency-subheading { font-size: clamp(28px, 3vw, 42px); line-height: 1.2; font-weight: 500; letter-spacing: -.035em; }
+.agency-link { display: inline-flex; gap: 24px; align-items: center; color: #bfdbfe; padding-bottom: 8px; border-bottom: 1px solid #bfdbfe66; }
+.agency-link:hover { color: white; }
+.agency-section { padding: 70px 0; border-top: 1px solid #ffffff18; scroll-margin-top: 32px; }
+.agency-service { padding: 32px 0; border-top: 1px solid #ffffff18; }
+.agency-step { padding: 28px; background: #ffffff03; border: 1px solid #ffffff12; border-radius: 12px; }
+.agency-principle { margin: 40px 0; padding: 48px; border-radius: 20px; background: linear-gradient(120deg, #132439, #0b111d); border: 1px solid #bfdbfe15; }
+.agency-closing { padding: 100px 0; text-align: center; }
+@media (max-width: 640px) { .agency-intro { padding: 24px 0 56px; } .agency-section { padding: 48px 0; } .agency-principle { padding: 28px 22px; } .agency-closing { padding: 64px 0; } }
