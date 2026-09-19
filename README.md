@@ -76,6 +76,6 @@ GitHub reposunu Vercel’de yeni proje olarak içe aktarın.
 - Node.js: **24.x**
 - Environment Variables: mevcut site için gerekli değil.
 
-Beş bölüm `/`, `/bolum-2`, `/bolum-3`, `/bolum-4`, `/bolum-5` adreslerindedir. Ses ve yerel medya dosyaları `public/` içindedir. Spline, Unicorn Studio ve bazı demo medyaları harici servislerden yüklenir.
+Dört bölüm `/`, `/bolum-2`, `/bolum-4`, `/bolum-5` adreslerindedir. Ses ve yerel medya dosyaları `public/` içindedir. Spline ve bazı demo medyaları harici servislerden yüklenir.
 
 Yerel ağ önizlemesi için `npm run start:lan`; standart üretim sunucusu için `npm start` kullanılabilir.
