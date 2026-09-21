@@ -1,4 +1,4 @@
-# Metaphy Growth Studio
+# Metaphy Growth Agency
 
 ## Çalıştırma
 
@@ -54,7 +54,7 @@ ffmpeg -i source.mp4 -an -vf 'scale=1280:-2,fps=30' -c:v libx264 -preset fast -c
 
 ### Metaphy robot kıyafeti
 
-`lib/robot-outfit.ts` sahne yüklendiğinde gövdeye mavi dokulu bir tişört kabuğu ve piksel karakterli METAPHY / GROWTH STUDIO baskısı ekler. Baskılar `Top part` nesnesinin çocuklarıdır; robotla birlikte hareket eder, ekran üzerinde sabit bir katman değildir. Tasarım yalnızca çalışma anında uygulanır, kaynak Spline sahnesi değiştirilmez. Aynı uygulamada tekrar eklenmesi WeakSet ile engellenir. Bu stilize bir 3D kıyafet görünümüdür; kumaş simülasyonu içermez.
+`lib/robot-outfit.ts` sahne yüklendiğinde gövdeye mavi dokulu bir tişört kabuğu ve piksel karakterli METAPHY / GROWTH AGENCY baskısı ekler. Baskılar `Top part` nesnesinin çocuklarıdır; robotla birlikte hareket eder, ekran üzerinde sabit bir katman değildir. Tasarım yalnızca çalışma anında uygulanır, kaynak Spline sahnesi değiştirilmez. Aynı uygulamada tekrar eklenmesi WeakSet ile engellenir. Bu stilize bir 3D kıyafet görünümüdür; kumaş simülasyonu içermez.
 
 ### Robot karşılama sesi
 

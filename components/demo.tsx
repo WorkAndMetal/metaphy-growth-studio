@@ -23,7 +23,7 @@ const sampleMediaContent: MediaContentCollection = {
       "https://cdn.21st.dev/assets/localized/5bb1be92440e920def3eb36ad5a610d609240616cd8b11c0effe6b92bcafe06e.jpg",
     background:
       "https://me7aitdbxq.ufs.sh/f/2wsMIGDMQRdYMNjMlBUYHaeYpxduXPVNwf8mnFA61L7rkcoS",
-    title: "Metaphy Growth Studio",
+    title: "Metaphy Growth Agency",
     date: "Dijital Reklamcılık",
     scrollToExpand: "Hayallerinizdeki reklam ajansı.",
   },
@@ -31,7 +31,7 @@ const sampleMediaContent: MediaContentCollection = {
     src: "/merkez-fotograf.jpeg",
     background:
       "/deneme.jpeg",
-    title: "Metaphy Growth Studio",
+    title: "Metaphy Growth Agency",
     date: "Dijital Reklamcılık",
     scrollToExpand: "Hayallerinizdeki reklam ajansı.",
   },
@@ -47,12 +47,12 @@ const services = [
 const MediaContent = () => (
   <main className="agency-content mx-auto w-full max-w-6xl">
     <section className="agency-intro" aria-labelledby="agency-title">
-      <p className="agency-eyebrow">METAPHY GROWTH STUDIO — STRATEJİ, KREATİF, PERFORMANS</p>
+      <p className="agency-eyebrow">METAPHY GROWTH AGENCY — STRATEJİ, KREATİF, PERFORMANS</p>
       <div className="grid gap-8 md:grid-cols-[1.3fr_1fr] md:gap-16">
         <h2 id="agency-title" className="agency-heading">Büyük fikirler.<br /><span className="text-blue-200">Ölçülebilir büyüme.</span></h2>
         <div className="space-y-5 text-lg leading-relaxed text-slate-300">
           <p>Markanızın potansiyelini açığa çıkarmak için buradayız. Yaratıcı düşünceyi veriyle birleştiriyor, dijitalde kurduğunuz her bağı büyüme yolculuğunuzun bir parçası haline getiriyoruz.</p>
-          <p>Metaphy Growth Studio olarak stratejiden uygulamaya kadar aynı hedefe odaklanıyoruz: markanız için anlamlı, sürdürülebilir ve ölçülebilir değer yaratmak.</p>
+          <p>Metaphy Growth Agency olarak stratejiden uygulamaya kadar aynı hedefe odaklanıyoruz: markanız için anlamlı, sürdürülebilir ve ölçülebilir değer yaratmak.</p>
           <a href="#hizmetler" className="agency-link">Neler yapıyoruz? <span aria-hidden="true">↗</span></a>
         </div>
       </div>
@@ -101,9 +101,9 @@ const MediaContent = () => (
       <p className="agency-eyebrow">BİR SONRAKİ ADIM</p>
       <h2 id="closing-title" className="agency-heading">Markanızın geleceğini<br /><span className="text-blue-200">birlikte büyütelim.</span></h2>
       <p className="mx-auto mt-7 max-w-xl text-lg leading-8 text-slate-400">Bir hedefiniz, yeni bir fikriniz ya da çözmek istediğiniz bir büyüme sorununuz var. Biz de onu birlikte ele almak için buradayız.</p>
-      <p className="mt-10 text-sm tracking-wide text-blue-100">Metaphy Growth Studio · Hayallerinizdeki reklam ajansı.</p>
+      <p className="mt-10 text-sm tracking-wide text-blue-100">Metaphy Growth Agency · Hayallerinizdeki reklam ajansı.</p>
     </section>
-    <footer className="flex flex-col justify-between gap-4 border-t border-white/10 py-8 text-xs text-slate-500 sm:flex-row"><span>© {new Date().getFullYear()} Metaphy Growth Studio</span><span>Stratejiyle düşünür. Yaratıcılıkla fark yaratır.</span></footer>
+    <footer className="flex flex-col justify-between gap-4 border-t border-white/10 py-8 text-xs text-slate-500 sm:flex-row"><span>© {new Date().getFullYear()} Metaphy Growth Agency</span><span>Stratejiyle düşünür. Yaratıcılıkla fark yaratır.</span></footer>
   </main>
 );
 

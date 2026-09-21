@@ -38,5 +38,5 @@ export async function dressMetaphyRobot(app: Application) {
   const shirt = await app.cloneObject(body, { name: "Metaphy Shirt", scale: [1.035, 1.015, 1.035] });
   shirt.color = "#386ba3";
   await app.createObject("CustomMesh", { name: "Metaphy Print", parent: torso, vertices: lettering("METAPHY", 1.7, 153), material: { color: "#edf7ff", roughness: 1, metalness: 0 } });
-  await app.createObject("CustomMesh", { name: "Growth Studio Print", parent: torso, vertices: lettering("GROWTH STUDIO", 0.75, 134), material: { color: "#b9dfff", roughness: 1, metalness: 0 } });
+  await app.createObject("CustomMesh", { name: "Growth Agency Print", parent: torso, vertices: lettering("GROWTH AGENCY", 0.75, 134), material: { color: "#b9dfff", roughness: 1, metalness: 0 } });
 }

@@ -17,7 +17,7 @@ export default function SecondSection() {
         signature={false}
       />
       <div className="pointer-events-none absolute right-5 top-20 z-10 text-right text-white sm:right-8 sm:top-5">
-        <p className="text-lg font-semibold tracking-[-0.04em]">Metaphy<span className="font-normal text-blue-200"> Growth Studio</span></p>
+        <p className="text-lg font-semibold tracking-[-0.04em]">Metaphy<span className="font-normal text-blue-200"> Growth Agency</span></p>
         <p className="mt-1 text-[9px] tracking-[0.24em] text-white/60">DİJİTAL REKLAM AJANSI</p>
       </div>
       <p className="pointer-events-none absolute bottom-5 left-0 z-10 w-full px-5 text-center text-[8px] tracking-[0.16em] text-white/60 sm:bottom-7 sm:left-8 sm:w-auto sm:px-0 sm:text-left sm:text-[10px]">

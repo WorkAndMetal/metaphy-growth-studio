@@ -7,7 +7,7 @@ function CampaignPreview() {
   return (
     <div className="flex h-full flex-col">
       <div className="flex items-center justify-between border-b border-[#162b22]/10 px-5 py-4 md:px-7">
-        <span className="flex items-center gap-2 text-sm font-semibold tracking-tight"><Orbit size={19} /> metaphy<span className="hidden font-normal text-[#718176] sm:inline"> / growth studio</span></span>
+        <span className="flex items-center gap-2 text-sm font-semibold tracking-tight"><Orbit size={19} /> metaphy<span className="hidden font-normal text-[#718176] sm:inline"> / growth agency</span></span>
         <span className="rounded-full border border-[#162b22]/15 px-2.5 py-1 text-[9px] tracking-widest text-[#5a7062]">ÖRNEK KAMPANYA PLANI</span>
       </div>
       <div className="flex min-h-0 flex-1">
@@ -31,14 +31,14 @@ function CampaignPreview() {
           </div>
         </div>
       </div>
-      <div className="flex items-center justify-between border-t border-[#162b22]/10 px-5 py-3 text-[9px] text-[#75887a]"><span className="flex items-center gap-1.5"><Check size={11} /> Markanıza özel planlama</span><span>METAPHY GROWTH STUDIO</span></div>
+      <div className="flex items-center justify-between border-t border-[#162b22]/10 px-5 py-3 text-[9px] text-[#75887a]"><span className="flex items-center gap-1.5"><Check size={11} /> Markanıza özel planlama</span><span>METAPHY GROWTH AGENCY</span></div>
     </div>
   );
 }
 
 export function AgencyScroll() {
   return <main className="min-h-screen overflow-x-clip bg-[#080e0b] pb-8 pt-24 text-[#eff6f0]">
-    <header className="mx-auto flex max-w-6xl items-center justify-between px-6 text-xs"><span className="font-semibold tracking-tight">Metaphy <span className="font-normal text-white/45">Growth Studio</span></span><span className="hidden text-[10px] tracking-[0.16em] text-[#b8d4bf]/60 sm:block">STRATEJİ · KREATİF · PERFORMANS</span></header>
+    <header className="mx-auto flex max-w-6xl items-center justify-between px-6 text-xs"><span className="font-semibold tracking-tight">Metaphy <span className="font-normal text-white/45">Growth Agency</span></span><span className="hidden text-[10px] tracking-[0.16em] text-[#b8d4bf]/60 sm:block">STRATEJİ · KREATİF · PERFORMANS</span></header>
     <ContainerScroll titleComponent={<><p className="mb-5 text-[10px] tracking-[0.24em] text-[#b6d8bd]">BÜYÜK RESME BİRLİKTE BAKALIM</p><h1 className="text-4xl font-semibold leading-[1.08] tracking-[-0.045em] md:text-6xl">Markanızın potansiyelini<br /><span className="text-[#b8f1b5]">büyümeye dönüştürelim.</span></h1><p className="mx-auto mt-6 max-w-xl px-4 text-sm leading-6 text-[#9bac9f]">Yaratıcı fikirleri doğru stratejiyle buluşturuyor, markanızın dijital yolculuğunu bir bütün olarak tasarlıyoruz.</p><p className="mt-6 inline-flex items-center gap-2 text-[10px] tracking-[0.14em] text-[#bed0c1]"><ArrowDown size={13} /> KEŞFETMEK İÇİN KAYDIR</p></>}><CampaignPreview /></ContainerScroll>
     <section className="relative mx-auto max-w-6xl px-6 pb-16" aria-labelledby="growth-title"><p className="mb-5 text-[10px] tracking-[0.2em] text-[#b6d8bd]">HER ADIM AYNI HEDEFE</p><h2 id="growth-title" className="max-w-2xl text-3xl font-medium tracking-tight md:text-4xl">İyi bir kampanya, güçlü bir bütünün parçasıdır.</h2><div className="mt-10 grid gap-8 md:grid-cols-3">{[
       {icon:Target,title:'Hedefi netleştiririz.',text:'Markanızı, müşterilerinizi ve iş hedeflerinizi anlayarak iletişiminizin yönünü belirleriz.'},
@@ -46,6 +46,6 @@ export function AgencyScroll() {
       {icon:ChartNoAxesCombined,title:'Öğrenerek geliştiririz.',text:'Kampanya verilerini düzenli değerlendirir, testlerle mesajları ve medya planını iyileştiririz.'},
     ].map(({icon:Icon,title,text})=><article key={title} className="border-t border-white/15 pt-6"><Icon className="mb-6 text-[#b8f1b5]" size={23} /><h3 className="mb-3 text-lg font-medium">{title}</h3><p className="text-sm leading-7 text-[#9bac9f]">{text}</p></article>)}</div>
       <div className="mt-16 flex flex-col justify-between gap-6 rounded-2xl border border-[#b8f1b5]/20 bg-[#122319] p-7 sm:flex-row sm:items-center"><p className="text-xl tracking-tight">Bir sonraki adımınız için buradayız.</p><a href="/#hizmetler" className="inline-flex w-fit items-center gap-6 rounded-full bg-[#b8f1b5] px-6 py-3 text-sm font-medium text-[#163521] hover:bg-white">Hizmetlerimizi keşfedin <ArrowUpRight size={16} /></a></div>
-    </section><footer className="mx-auto flex max-w-6xl justify-between gap-4 border-t border-white/10 px-6 pt-7 text-[10px] text-[#7b9382]"><span>Metaphy Growth Studio</span><span>Hayallerinizdeki reklam ajansı.</span></footer>
+    </section><footer className="mx-auto flex max-w-6xl justify-between gap-4 border-t border-white/10 px-6 pt-7 text-[10px] text-[#7b9382]"><span>Metaphy Growth Agency</span><span>Hayallerinizdeki reklam ajansı.</span></footer>
   </main>;
 }

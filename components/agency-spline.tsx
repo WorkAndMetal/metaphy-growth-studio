@@ -9,7 +9,7 @@ export function AgencySpline() {
   return (
     <main className="min-h-screen bg-[#06080d] px-5 pb-8 pt-24 text-white md:px-10 lg:px-16">
       <header className="mx-auto mb-8 flex max-w-7xl items-end justify-between border-b border-white/10 pb-6">
-        <div><p className="text-xl font-semibold tracking-tight">Metaphy <span className="font-normal text-slate-400">Growth Studio</span></p><p className="mt-2 text-[10px] tracking-[0.2em] text-blue-200/70">DİJİTAL REKLAM AJANSI</p></div>
+        <div><p className="text-xl font-semibold tracking-tight">Metaphy <span className="font-normal text-slate-400">Growth Agency</span></p><p className="mt-2 text-[10px] tracking-[0.2em] text-blue-200/70">DİJİTAL REKLAM AJANSI</p></div>
         <span className="hidden text-xs text-slate-500 sm:block">Fikirden etkiye.</span>
       </header>
       <Card className="relative mx-auto w-full max-w-7xl overflow-hidden rounded-3xl border-white/10 bg-[#0a0d14] text-white">
@@ -37,7 +37,7 @@ export function AgencySpline() {
           { icon: ChartNoAxesCombined, title: "Veriyle ileri gideriz.", text: "Reklam performansını ölçer, testlerden öğrenir ve her adımı daha etkili hale getiririz." },
         ].map(({ icon: Icon, title, text }) => <article key={title} className="rounded-2xl border border-white/10 bg-white/[0.02] p-6"><Icon size={21} className="mb-5 text-blue-200" /><h2 className="mb-3 text-base font-medium">{title}</h2><p className="text-sm leading-6 text-slate-400">{text}</p></article>)}
       </section>
-      <footer className="mx-auto mt-10 flex max-w-7xl flex-col justify-between gap-3 text-[11px] text-slate-500 sm:flex-row"><span>Metaphy Growth Studio</span><span>Hayallerinizdeki reklam ajansı.</span></footer>
+      <footer className="mx-auto mt-10 flex max-w-7xl flex-col justify-between gap-3 text-[11px] text-slate-500 sm:flex-row"><span>Metaphy Growth Agency</span><span>Hayallerinizdeki reklam ajansı.</span></footer>
     </main>
   );
 }

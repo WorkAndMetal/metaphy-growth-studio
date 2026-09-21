@@ -2,7 +2,7 @@
 
 ## Overview
 
-Static Metaphy Growth Studio marketing site. App Router pages compose client-side visual experiences; content is hard-coded in components and local `public/` media.
+Static Metaphy Growth Agency marketing site. App Router pages compose client-side visual experiences; content is hard-coded in components and local `public/` media.
 
 ## Directory map
 

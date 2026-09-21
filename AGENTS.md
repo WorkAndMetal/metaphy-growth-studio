@@ -1,4 +1,4 @@
-# Metaphy Growth Studio — Agent Guide
+# Metaphy Growth Agency — Agent Guide
 
 **Context efficiency:** Do not scan or read the entire repository at task start. Read `AGENTS.md` and `PROJECT_MAP.md`, identify the subsystem, then inspect only the minimum files needed. For ordinary localized tasks, use the routing map plus search and inspect the smallest dependency neighborhood.
 
@@ -44,3 +44,13 @@ Node `24.x` is declared in `package.json`. Vercel needs no environment variables
 - Expand context only when current evidence is insufficient. `PROJECT_MAP.md` navigates; verify code before structural or risky changes.
 
 Read `docs/CODEX_HANDOFF.md` only for non-obvious implementation decisions and hazards.
+
+<!-- BEGIN:nextjs-agent-rules -->
+
+# This is NOT the Next.js you know
+
+This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` (resolved from this file's directory; in monorepos the `next` package may not be visible from the repo root) before writing any code. Heed deprecation notices.
+
+This block is written and re-added by `next dev` — verify at `node_modules/next/dist/server/lib/generate-agent-files.js`. Removing it from a diff only re-creates the uncommitted change; committing it with your work keeps the tree clean.
+
+<!-- END:nextjs-agent-rules -->
