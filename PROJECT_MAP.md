@@ -22,6 +22,7 @@ Static Metaphy Growth Agency marketing site. App Router pages compose client-sid
 | `app/layout.tsx` | HTML language/theme, metadata, global nav |
 | `app/page.tsx` | Home composition via `components/demo.tsx` |
 | `app/bolum-2/page.tsx` | Local video scrub page props/copy |
+| `app/bolum-3/page.tsx` | Interactive growth system metadata and composition |
 | `app/bolum-4/page.tsx` | Spline robot page |
 | `app/bolum-5/page.tsx` | Scroll campaign preview page |
 | `next.config.ts` | Turbopack/tracing roots and permitted remote images |
@@ -35,6 +36,7 @@ Static Metaphy Growth Agency marketing site. App Router pages compose client-sid
 | Home scroll or anchor behavior | `components/ui/scroll-expansion-hero.tsx` → `components/demo.tsx` |
 | Section 2 visual/copy | `app/bolum-2/page.tsx` → `components/ui/scroll-locked-video-hero.tsx` |
 | Section 2 performance/video | `components/ui/scroll-locked-video-hero.tsx` → `public/media/metro-scrub.mp4` → `README.md` |
+| Section 3 copy/interaction/style | `components/growth-system.tsx` → `components/growth-system.module.css` |
 | Robot layout/copy | `components/agency-spline.tsx` → `components/talking-robot.tsx` |
 | Robot scene/loading/error | `components/talking-robot.tsx` → `components/ui/splite.tsx` |
 | Robot shirt/logo geometry | `lib/robot-outfit.ts` → `components/ui/splite.tsx` |
@@ -49,6 +51,7 @@ Static Metaphy Growth Agency marketing site. App Router pages compose client-sid
 `components/demo.tsx` — home media selector, agency copy, and expanded content.  
 `components/ui/scroll-expansion-hero.tsx` — home wheel/touch expansion state and hash-anchor bootstrap.  
 `components/ui/scroll-locked-video-hero.tsx` — gesture/keyboard video scrub loop and body-scroll lock.  
+`components/growth-system.tsx` — strategy/creative/performance selector, orbital illustration, and live detail panel; styles isolated in `growth-system.module.css`.
 `components/agency-spline.tsx` — section 4 presentation around the robot scene.  
 `components/talking-robot.tsx` — accessible robot-triggered audio playback.  
 `components/ui/splite.tsx` — lazy Spline loader, error boundary, robot customization hook.  
@@ -61,6 +64,7 @@ Static Metaphy Growth Agency marketing site. App Router pages compose client-sid
 
 Home: browser → `app/page.tsx` → `demo.tsx` → expand interaction → `scroll-expansion-hero.tsx` → agency content.  
 Section 2: browser → route props → `scroll-locked-video-hero.tsx` → wheel/touch/keys → throttled `<video>.currentTime`.  
+Section 3: browser → `GrowthSystem` → discipline button → local state → orbital color/label and accessible detail panel. CSS respects reduced motion; no external media or scroll lock.
 Section 4: browser → `agency-spline.tsx` → `TalkingRobot` → Spline lazy load → `dressMetaphyRobot`; click/Enter/Space → local Holden MP3.  
 Section 5: browser → `AgencyScroll` → `ContainerScroll` → Framer Motion scroll transforms.
 

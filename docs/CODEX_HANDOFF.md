@@ -27,7 +27,7 @@
 
 - No TODO/FIXME markers, tests, API endpoints, data layer, auth, environment reads, or known incomplete subsystems were found.
 - Three greeting MP3s exist, but the active asset is `public/audio/metaphy-merhaba-holden.mp3`; the others are unused historical alternatives.
-- Section numbering intentionally skips 3: `/bolum-3` and its menu item were removed in commit `2e5c5aa`.
+- Section 3 was redesigned as an interactive growth system at `/bolum-3`. Native buttons update local state, an aria-live detail panel, and a decorative SVG orbital illustration. CSS is scoped and respects reduced motion; the page has no scroll lock or external media dependencies.
 
 ## Cross-cutting concerns
 

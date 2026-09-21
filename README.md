@@ -48,6 +48,10 @@ Yeniden üretim (FFmpeg):
 ffmpeg -i source.mp4 -an -vf 'scale=1280:-2,fps=30' -c:v libx264 -preset fast -crf 21 -g 1 -keyint_min 1 -bf 0 -pix_fmt yuv420p -movflags +faststart public/media/metro-scrub.mp4
 ```
 
+## 3. Bölüm — büyümenin bağlantı noktası
+
+`/bolum-3`, strateji, kreatif ve performansı bir araya getiren özgün bir etkileşimli sayfadır. `components/growth-system.tsx` içindeki üç seçim düğmesi yörünge çiziminin rengini, merkez mesajını ve yaklaşım açıklamasını günceller. Düğmeler klavye ile kullanılabilir; açıklamalar `aria-live` ile duyurulur. `components/growth-system.module.css` mobil yerleşimi ve azaltılmış hareket tercihini kapsar. SVG çizim yereldir; ek paket, harici medya veya kaydırma kilidi kullanılmaz.
+
 ## 4. Bölüm — etkileşimli 3D
 
 `/bolum-4` adresinde Metaphy için uyarlanmış Spline sahnesi bulunur. `components/agency-spline.tsx` sayfa içeriğini, `components/ui/splite.tsx` yükleme ve hata durumlarıyla 3D sahneyi, `components/ui/spotlight.tsx` imleci takip eden ışığı içerir. Spline paketi gerektiğinde yüklenir. Sahne harici Spline adresinden geldiği için internet bağlantısı gerektirir. Mobilde metin ve sahne alt alta yerleşir. Hizmet ve yaklaşım bağlantıları birinci bölümdeki ilgili içeriğe açılır.
@@ -76,6 +80,6 @@ GitHub reposunu Vercel’de yeni proje olarak içe aktarın.
 - Node.js: **24.x**
 - Environment Variables: mevcut site için gerekli değil.
 
-Dört bölüm `/`, `/bolum-2`, `/bolum-4`, `/bolum-5` adreslerindedir. Ses ve yerel medya dosyaları `public/` içindedir. Spline ve bazı demo medyaları harici servislerden yüklenir.
+Beş bölüm `/`, `/bolum-2`, `/bolum-3`, `/bolum-4`, `/bolum-5` adreslerindedir. Ses ve yerel medya dosyaları `public/` içindedir. Spline ve bazı demo medyaları harici servislerden yüklenir.
 
 Yerel ağ önizlemesi için `npm run start:lan`; standart üretim sunucusu için `npm start` kullanılabilir.

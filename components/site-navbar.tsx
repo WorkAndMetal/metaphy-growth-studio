@@ -19,7 +19,7 @@ export default function SiteNavbar() {
   }, [pathname]);
   return (
     <nav ref={navRef} aria-label="Bölümler" className="fixed left-4 top-4 max-w-[calc(100vw-2rem)] overflow-x-auto z-[100] flex gap-1 rounded-xl border border-white/20 bg-black/60 p-1 text-sm shadow-lg backdrop-blur-md">
-      {[{ href: "/", label: "1. Bölüm" }, { href: "/bolum-2", label: "2. Bölüm" }, { href: "/bolum-4", label: "4. Bölüm" }, { href: "/bolum-5", label: "5. Bölüm" }].map(({ href, label }) => (
+      {[{ href: "/", label: "1. Bölüm" }, { href: "/bolum-2", label: "2. Bölüm" }, { href: "/bolum-3", label: "3. Bölüm" }, { href: "/bolum-4", label: "4. Bölüm" }, { href: "/bolum-5", label: "5. Bölüm" }].map(({ href, label }) => (
         <Link key={href} href={href} aria-current={pathname === href ? "page" : undefined}
           className={`shrink-0 whitespace-nowrap rounded-lg px-3 py-2 font-medium transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-200 ${pathname === href ? "bg-white text-black" : "text-white/75 hover:bg-white/10 hover:text-white"}`}>
           {label}

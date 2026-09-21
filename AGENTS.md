@@ -4,7 +4,7 @@
 
 ## Project identity
 
-Four-route Turkish digital-agency showcase built around interactive media: expandable hero, scroll-scrub video, interactive Spline robot, and a scroll-perspective campaign preview.
+Five-route Turkish digital-agency showcase: expandable hero, scroll-scrub video, interactive growth system, Spline robot, and a scroll-perspective campaign preview.
 
 ## Stack
 
@@ -25,7 +25,7 @@ Node `24.x` is declared in `package.json`. Vercel needs no environment variables
 
 ## Routes
 
-`/` home; `/bolum-2` video scrub; `/bolum-4` Spline robot; `/bolum-5` scroll campaign preview. `components/site-navbar.tsx` is the shared route menu; keep it synchronized if routes change.
+`/` home; `/bolum-2` video scrub; `/bolum-3` interactive growth system; `/bolum-4` Spline robot; `/bolum-5` scroll campaign preview. `components/site-navbar.tsx` is the shared route menu; keep it synchronized if routes change.
 
 ## Rules and constraints
 
