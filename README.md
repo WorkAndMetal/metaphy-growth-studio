@@ -52,6 +52,8 @@ ffmpeg -i source.mp4 -an -vf 'scale=1280:-2,fps=30' -c:v libx264 -preset fast -c
 
 `/bolum-3`, strateji, kreatif ve performansı bir araya getiren özgün bir etkileşimli sayfadır. `components/growth-system.tsx` içindeki üç seçim düğmesi yörünge çiziminin rengini, merkez mesajını ve yaklaşım açıklamasını günceller. Düğmeler klavye ile kullanılabilir; açıklamalar `aria-live` ile duyurulur. `components/growth-system.module.css` mobil yerleşimi ve azaltılmış hareket tercihini kapsar. SVG çizim yereldir; ek paket, harici medya veya kaydırma kilidi kullanılmaz.
 
+Yörünge merkezi ve etiketleri disiplin seçimini destekler. Hedef seçici üç farklı başlangıç planını gösterir; dört aşamalı süreçte yerel `details` öğeleri ayrıntıları açar. Hareketli yazı şeridi, yörünge detayları ve kaydırma animasyonları hareketi durdurma düğmesiyle kapatılır; sistemin azaltılmış hareket tercihi de desteklenir.
+
 ## 4. Bölüm — etkileşimli 3D
 
 `/bolum-4` adresinde Metaphy için uyarlanmış Spline sahnesi bulunur. `components/agency-spline.tsx` sayfa içeriğini, `components/ui/splite.tsx` yükleme ve hata durumlarıyla 3D sahneyi, `components/ui/spotlight.tsx` imleci takip eden ışığı içerir. Spline paketi gerektiğinde yüklenir. Sahne harici Spline adresinden geldiği için internet bağlantısı gerektirir. Mobilde metin ve sahne alt alta yerleşir. Hizmet ve yaklaşım bağlantıları birinci bölümdeki ilgili içeriğe açılır.

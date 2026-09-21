@@ -47,4 +47,51 @@
   .stageButton svg { grid-column: 2; grid-row: 1; }
   .stageButton > span:nth-child(2) { grid-column: 1 / -1; grid-row: 2; }
 }
-@media (prefers-reduced-motion: reduce) { .page *, .page *::before, .page *::after { animation: none !important; transition: none !important; } }
+.core { border: 0; transition: scale .4s, box-shadow .4s; }
+.core:hover { scale: 1.04; box-shadow: inset 0 0 0 1px var(--signal), 0 16px 65px #0008; }
+.core > svg { animation: spin 24s linear infinite; }
+.halo { animation: breathe 6s ease-in-out infinite; }
+.orbits > circle { transform-origin: center; animation: spin 55s linear infinite; }
+.orbitLabel { min-height: 36px; border: 1px solid transparent; border-radius: 4px; transition: color .3s, border-color .3s; }
+.orbitLabel:hover, .orbitLabel[aria-pressed="true"] { color: var(--signal); border-color: color-mix(in srgb, var(--signal) 35%, transparent); }
+.motionToggle { display: inline-flex; align-items: center; gap: 6px; min-height: 36px; font-size: 9px; letter-spacing: 0; }
+.wordRibbon { margin: 25px 0 0; padding: 28px 0; border-block: 1px solid #ffffff24; overflow: hidden; color: var(--signal); }
+.wordRibbon > div { display: flex; width: max-content; animation: ribbon 35s linear infinite; }
+.wordRibbon span { display: flex; align-items: center; gap: 36px; padding-right: 36px; font-size: clamp(40px, 6vw, 80px); letter-spacing: -3px; line-height: 1.1; white-space: nowrap; }
+.wordRibbon svg { width: 42px; height: 42px; stroke-width: 1; }
+.goalSection { padding: 110px 0; }
+.editorialHeading h2, .processIntro h2, .principles h2 { font-size: clamp(40px, 5vw, 72px); line-height: 1.08; letter-spacing: -.055em; margin: 22px 0; }
+.editorialHeading h2 span, .processIntro h2 span { color: #929688; }
+.editorialHeading > p:last-child { max-width: 460px; font-size: 15px; line-height: 1.8; color: #b2b4a7; }
+.goalChoices { display: flex; gap: 12px; margin: 38px 0 30px; flex-wrap: wrap; }
+.goalChoices button { display: flex; align-items: center; gap: 20px; border: 1px solid #ffffff35; border-radius: 40px; padding: 16px 22px; font-size: 13px; transition: background .3s, color .3s, transform .3s; }
+.goalChoices button > span { font: 9px monospace; color: #a4a699; }
+.goalChoices button:hover { transform: translateY(-3px); border-color: var(--signal); }
+.goalChoices button[aria-pressed="true"] { color: #141513; background: var(--signal); border-color: var(--signal); }
+.goalChoices button[aria-pressed="true"] > span { color: #141513; }
+.goalResult { display: grid; grid-template-columns: .85fr 1.15fr; border: 1px solid #ffffff24; min-height: 480px; }
+.goalQuestion { padding: 40px; display: flex; flex-direction: column; background: var(--signal); color: #1b1d16; transition: background .4s; }
+.goalQuestion > span { font: 9px/1.7 monospace; letter-spacing: 1px; }
+.goalQuestion svg { margin: 36px 0 24px; }
+.goalQuestion > p { font-size: clamp(28px, 3vw, 42px); letter-spacing: -1.5px; line-height: 1.15; max-width: 340px; flex: 1; margin-bottom: 35px; animation: appear .4s both; }
+.goalPlan { padding: 40px; animation: appear .45s both; }.goalPlan h3 { font-size: 25px; letter-spacing: -.8px; line-height: 1.25; }.goalPlan > p { font-size: 13px; line-height: 1.8; color: #b2b4a7; margin: 18px 0 25px; }.goalPlan ol { list-style: none; padding: 0; }.goalPlan li { display: flex; gap: 20px; padding: 13px 0; border-top: 1px solid #ffffff20; font-size: 12px; line-height: 1.6; }.goalPlan li > span { font: 10px/1.8 monospace; color: var(--signal); }.deliverable { margin-top: 25px; }.deliverable > span { font: 8px monospace; letter-spacing: 1.5px; color: #a4a699; }.deliverable p { font-size: 12px; margin-top: 9px; color: var(--signal); line-height: 1.6; }
+.processSection { display: grid; grid-template-columns: .85fr 1.15fr; gap: 70px; padding: 90px 0; border-top: 1px solid #ffffff24; align-items: start; }
+.processIntro { position: sticky; top: 110px; }.processIntro > p:last-of-type { max-width: 310px; font-size: 14px; line-height: 1.8; color: #b2b4a7; }
+.cycleArt { width: 200px; height: 200px; position: relative; display: grid; place-items: center; margin-top: 50px; }.cycleArt::before, .cycleArt::after { content: ""; position: absolute; inset: 0; border: 1px dashed #ffffff40; border-radius: 50%; animation: spin 45s linear infinite; }.cycleArt::after { inset: 17px; border-style: solid; border-color: var(--signal) transparent; animation-direction: reverse; animation-duration: 20s; }.cycleArt svg { position: absolute; top: 35px; color: var(--signal); width: 32px; height: 32px; }.cycleArt span { font: 10px/1.5 monospace; letter-spacing: 2px; text-align: center; margin-top: 20px; }
+.processStep { display: grid; grid-template-columns: 40px 1fr; gap: 20px; padding: 35px 0; border-top: 1px solid #ffffff24; }.processStep:first-child { padding-top: 0; border-top: 0; }.processNumber { font: 16px monospace; color: var(--signal); padding-top: 3px; }.processStep h3 { font-size: clamp(25px, 3vw, 38px); letter-spacing: -1.5px; margin: 15px 0; line-height: 1.15; }.processStep p:not(.eyebrow) { font-size: 13px; line-height: 1.9; color: #b2b4a7; }.processStep details { margin-top: 20px; }.processStep summary { display: flex; align-items: center; justify-content: space-between; cursor: pointer; font-size: 11px; padding: 12px 0; list-style: none; }.processStep summary::-webkit-details-marker { display: none; }.processStep summary svg { transition: transform .3s; }.processStep details[open] summary svg { transform: rotate(45deg); }.processStep details[open] > p { animation: appear .3s both; padding: 5px 0 15px; }.stepOutput { display: block; font-size: 10px; color: var(--signal); padding-top: 18px; }.processStep summary:focus-visible { outline: 2px solid var(--signal); outline-offset: 4px; }
+.principles { background: #e9e8de; color: #22251c; padding: 65px; margin: 20px 0 85px; }.principles .eyebrow { color: #525748; }.principles h2 span { color: #777e69; }.principles > div { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; margin-top: 55px; }.principles article { border-top: 1px solid #22251c40; padding-top: 20px; transition: transform .3s; }.principles article:hover { transform: translateY(-5px); }.principles article > span { font: 10px monospace; color: #606654; }.principles h3 { font-size: 23px; margin: 28px 0 15px; letter-spacing: -.7px; }.principles article p { font-size: 13px; line-height: 1.85; color: #535947; }
+.page[data-paused="true"] *, .page[data-paused="true"] *::before, .page[data-paused="true"] *::after { animation: none !important; transition: none !important; }
+@keyframes spin { to { transform: rotate(360deg); } }
+@keyframes breathe { 50% { opacity: .5; transform: scale(.88); } }
+@keyframes ribbon { to { transform: translateX(-50%); } }
+@media (max-width: 1000px) { .processSection { gap: 35px; }.principles { padding: 40px; }.principles > div { gap: 24px; }.goalPlan, .goalQuestion { padding: 28px; } }
+@media (max-width: 680px) {
+  .artMeta { padding: 0; font-size: 7px; gap: 8px; }.motionToggle { font-size: 8px; flex-shrink: 0; }
+  .wordRibbon { padding: 20px 0; margin-top: 10px; }.wordRibbon span { gap: 20px; padding-right: 20px; font-size: 40px; letter-spacing: -2px; }.wordRibbon svg { width: 28px; height: 28px; }
+  .goalSection { padding: 65px 0; }.editorialHeading h2, .processIntro h2, .principles h2 { font-size: 42px; }.editorialHeading > p:last-child { font-size: 13px; }
+  .goalChoices { flex-direction: column; gap: 9px; margin: 28px 0 22px; }.goalChoices button { justify-content: space-between; padding: 15px 20px; }.goalChoices button > span { margin-right: auto; }.goalChoices button > svg { margin-left: auto; }
+  .goalResult { grid-template-columns: 1fr; }.goalQuestion, .goalPlan { padding: 26px; }.goalQuestion svg { margin: 25px 0; width: 40px; height: 40px; }.goalQuestion > p { font-size: 33px; }.goalPlan h3 { font-size: 24px; }
+  .processSection { grid-template-columns: 1fr; padding: 60px 0; gap: 40px; }.processIntro { position: static; }.cycleArt { width: 150px; height: 150px; margin-top: 28px; }.cycleArt svg { top: 25px; width: 24px; height: 24px; }.cycleArt span { font-size: 8px; }.processStep { grid-template-columns: 28px 1fr; gap: 12px; }.processStep h3 { font-size: 29px; }
+  .principles { padding: 32px 24px; margin: 0 0 50px; }.principles h2 { font-size: 36px; }.principles > div { grid-template-columns: 1fr; gap: 28px; margin-top: 35px; }.principles h3 { margin-top: 18px; }
+}
+@media (prefers-reduced-motion: reduce) { .page *, .page *::before, .page *::after { animation: none !important; transition: none !important; }.page section, .processStep { opacity: 1 !important; transform: none !important; } }

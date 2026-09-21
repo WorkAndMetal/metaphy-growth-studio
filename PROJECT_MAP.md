@@ -64,7 +64,7 @@ Static Metaphy Growth Agency marketing site. App Router pages compose client-sid
 
 Home: browser → `app/page.tsx` → `demo.tsx` → expand interaction → `scroll-expansion-hero.tsx` → agency content.  
 Section 2: browser → route props → `scroll-locked-video-hero.tsx` → wheel/touch/keys → throttled `<video>.currentTime`.  
-Section 3: browser → `GrowthSystem` → discipline button → local state → orbital color/label and accessible detail panel. CSS respects reduced motion; no external media or scroll lock.
+Section 3: browser → `GrowthSystem` → discipline/orbit controls and goal selector → local state → accessible detail panels. Includes native process disclosures, scroll reveals, animated ribbon, and a motion toggle. CSS and Framer Motion respect reduced motion; no external media or scroll lock.
 Section 4: browser → `agency-spline.tsx` → `TalkingRobot` → Spline lazy load → `dressMetaphyRobot`; click/Enter/Space → local Holden MP3.  
 Section 5: browser → `AgencyScroll` → `ContainerScroll` → Framer Motion scroll transforms.
 
