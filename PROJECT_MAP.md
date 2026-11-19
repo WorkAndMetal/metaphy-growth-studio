@@ -25,6 +25,7 @@ Static Metaphy Growth Agency marketing site. App Router pages compose client-sid
 | `app/bolum-3/page.tsx` | Interactive growth system metadata and composition |
 | `app/bolum-4/page.tsx` | Spline robot page |
 | `app/bolum-5/page.tsx` | Scroll campaign preview page |
+| `app/bolum-6/page.tsx` | Mood board carousel metadata and composition |
 | `next.config.ts` | Turbopack/tracing roots and permitted remote images |
 
 ## Subsystem routing
@@ -42,6 +43,7 @@ Static Metaphy Growth Agency marketing site. App Router pages compose client-sid
 | Robot shirt/logo geometry | `lib/robot-outfit.ts` → `components/ui/splite.tsx` |
 | Robot greeting sound | `components/talking-robot.tsx` → `public/audio/metaphy-merhaba-holden.mp3` |
 | Section 5 copy/layout | `components/agency-scroll.tsx` → `components/ui/container-scroll-animation.tsx` |
+| Section 6 carousel module/loading | `components/mood-board-demo.tsx` → `components/ui/mood-board-carousel.tsx` → Slider Revolution Anywhere |
 | Shared styles | `app/globals.css` → relevant component |
 | Tailwind/shadcn imports | `components.json` → `lib/utils.ts` → `app/globals.css` |
 | Deployment/build | `package.json` → `next.config.ts` → `README.md` |
@@ -57,6 +59,8 @@ Static Metaphy Growth Agency marketing site. App Router pages compose client-sid
 `components/ui/splite.tsx` — lazy Spline loader, error boundary, robot customization hook.  
 `lib/robot-outfit.ts` — runtime Spline geometry for shirt and pixel lettering.  
 `components/agency-scroll.tsx` — section 5 content and mock campaign UI.  
+`components/ui/mood-board-carousel.tsx` — accessible async Slider Revolution Anywhere embed with loading, retry, and route cleanup.
+`components/mood-board-demo.tsx` — section 6 mood board module key and composition.
 `components/ui/container-scroll-animation.tsx` — sticky 3D transform with reduced-motion support.  
 `components/site-navbar.tsx` — fixed shared route navigation and active-item centering.
 
@@ -67,6 +71,7 @@ Section 2: browser → route props → `scroll-locked-video-hero.tsx` → wheel/
 Section 3: browser → `GrowthSystem` → discipline/orbit controls and goal selector → local state → accessible detail panels. Includes native process disclosures, scroll reveals, animated ribbon, and a motion toggle. CSS and Framer Motion respect reduced motion; no external media or scroll lock.
 Section 4: browser → `agency-spline.tsx` → `TalkingRobot` → Spline lazy load → `dressMetaphyRobot`; click/Enter/Space → local Holden MP3.  
 Section 5: browser → `AgencyScroll` → `ContainerScroll` → Framer Motion scroll transforms.
+Section 6: browser → `MoodBoardDemo` → `SliderRevolutionCarousel` → Slider Revolution embed script → embedded mood board. External connectivity is required; a loading placeholder and retry state cover delayed or failed loads.
 
 ## Auth, backend, data, environment
 
@@ -81,6 +86,7 @@ App Router routes share `RootLayout` and `SiteNavbar`. Tailwind utility classes 
 | Service | Files | Purpose |
 |---|---|---|
 | Spline | `components/ui/splite.tsx`, `lib/robot-outfit.ts` | Loads and customizes external 3D scene |
+| Slider Revolution Anywhere | `components/ui/mood-board-carousel.tsx` | Loads and renders the hosted animated mood board module |
 | Remote media/CDNs | `components/demo.tsx`, `next.config.ts` | Home video/background and image allow-list |
 
 ## Config

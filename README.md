@@ -70,6 +70,10 @@ Yörünge merkezi ve etiketleri disiplin seçimini destekler. Hedef seçici üç
 
 `/bolum-5`, `components/ui/container-scroll-animation.tsx` bileşenini kullanır. Framer Motion mevcut bağımlılıktır. `components/agency-scroll.tsx` Metaphy başlığını ve HTML ile hazırlanmış örnek kampanya planını içerir; müşteri sonucu veya gerçek performans verisi iddiası içermez. Kaydırmayla perspektif ve ölçek değişir; azaltılmış hareket tercihinde bu dönüşümler kapatılır. Hizmet bağlantısı ilk bölümdeki hizmetlere gider.
 
+## 6. Bölüm — Mood Board
+
+`/bolum-6`, Slider Revolution Anywhere üzerinde barındırılan animasyonlu Mood Board modülünü `components/ui/mood-board-carousel.tsx` ile yükler. `components/mood-board-demo.tsx` modül anahtarını ve erişilebilir bölge adını sağlar. Modül betiği asenkron yüklenir; yükleme yer tutucusu, hata mesajı ve yeniden deneme kontrolü bulunur. İçerik Slider Revolution servisi üzerinden geldiği için internet bağlantısı gerektirir.
+
 ## Vercel kurulumu
 
 GitHub reposunu Vercel’de yeni proje olarak içe aktarın.
@@ -82,6 +86,6 @@ GitHub reposunu Vercel’de yeni proje olarak içe aktarın.
 - Node.js: **24.x**
 - Environment Variables: mevcut site için gerekli değil.
 
-Beş bölüm `/`, `/bolum-2`, `/bolum-3`, `/bolum-4`, `/bolum-5` adreslerindedir. Ses ve yerel medya dosyaları `public/` içindedir. Spline ve bazı demo medyaları harici servislerden yüklenir.
+Altı bölüm `/`, `/bolum-2`, `/bolum-3`, `/bolum-4`, `/bolum-5`, `/bolum-6` adreslerindedir. Ses ve yerel medya dosyaları `public/` içindedir. Spline, Slider Revolution ve bazı demo medyaları harici servislerden yüklenir.
 
 Yerel ağ önizlemesi için `npm run start:lan`; standart üretim sunucusu için `npm start` kullanılabilir.
